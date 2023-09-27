@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angel Kachev | Web Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- New navbar and hamburger -->
+    <nav class="navbar">
+      <div class="brand-title">KachDEV</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="home" id="home">
+        <div class="home-content">
+          <h1>Angel Kachev</h1>
+          <h2>Web Developer</h2>
+          <p>
+            Your own personal web dev. Someone to build your website. Someone
+            who's there. Someone who loves exploring innovative ways to express
+            himself and bring ideas to life.
+          </p>
+          <div class="btn-box">
+            <a href="#projects" class="btn">View projects</a>
+          </div>
+        </div>
+        <div class="character">
+          <div class="speech-bubble">Hello! Is it me you're looking for?</div>
+          <div class="hero-img"><img src="images/animated me.png"</div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="projects-content">
+          <h2 class="heading">{myProjects}</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--one">
+                <div>
+                  <h2>To-Do List</h2>
+                  <a href="https://whatsnext.angelk8.sg-host.com/">Review</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--two">
+                <div>
+                  <h2>Gallery App</h2>
+                  <a href="https://gallery.angelk8.sg-host.com/">Review</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--three">
+                <div>
+                  <h2>Weather App</h2>
+                  <a href="https://github.com/Kachev032/weather-app">Review</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--four">
+                <div>
+                  <h2>Dad Jokes</h2>
+                  <a href="https://dadjokes.angelk8.sg-host.com/">Review</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-content">
+          <h2 class="heading">About Me</h2>
+          <h3>
+            I am a passionate individual with a creative mind, a proactive
+            mindset, and an unwavering work ethic.
+          </h3>
+          <p>
+            I've been into web development since 2022 and have been working on
+            expanding my knowledge and skills ever since. Currently I'm focusing
+            on JavaScript, HTML, CSS and React.js and plan on going Fullstack
+            for the future.
+          </p>
+          <p>
+            I believe that hard work, dedication, and perseverance are
+            non-negotiable when it comes to achieving one's goals and I approach
+            every project with passion and commitment.
+          </p>
+
+          <h3>Hey, did you click the space cat yet?</h3>
+        </div>
+        <div class="about-img">
+          <div class="hidden-message" id="hidden-message">
+            I'll play your favourite song if you hire him.
+          </div>
+          <img
+            src="images/Guitar player no back.png"
+            alt=""
+            id="clickable-img"
+          />
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2>
+        <form
+          action="https://formsubmit.co/d537315aaae3ef683f17504e68c33824"
+          method="POST"
+        >
+          <div class="input-box">
+            <div class="input-field">
+              <input type="text" name="name" placeholder="Full Name" required />
+              <span class="focus"></span>
+            </div>
+            <div class="input-field">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <span class="focus"></span>
+            </div>
+
+            <div class="textarea-field">
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <span class="focus"></span>
+            </div>
+          </div>
+          <div class="btn-box btns">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Angel Kachev | All Rights Reserved.</p>
+      </div>
+      <div class="social-media">
+        <a href="https://github.com/Kachev032" target="_blank" style="--i: 1"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/angel_kachev/"
+          target="_blank"
+          style="--i: 2"
+          ><i class="bx bxl-instagram-alt"></i
+        ></a>
+        <a
+          href="mailto:akkachev@gmail.com"
+          target="_blank"
+          alt="Email"
+          style="--i: 3"
+          ><i class="bx bxs-envelope"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
