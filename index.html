@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Angel Kachev | Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="images/hero smaller.png">
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    
   </head>
 
   <body>
-    <!-- New navbar and hamburger -->
     <nav class="navbar">
-      <div class="brand-title">KachDEV</div>
+      
+        <div class="brand-title" >
+          <a href="#home"><img src="images/logo 80x80.png"></img></a>
+        
+      </div>
       <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -26,137 +29,111 @@
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#">My Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
+    
+      
     </nav>
-    <main>
-      <section class="home" id="home">
-        <div class="home-content">
-          <h1>Angel Kachev</h1>
-          <h2>Web Developer</h2>
-          <p>
-            Your own personal web dev. Someone to build your website. Someone
-            who's there. Someone who loves exploring innovative ways to express
-            himself and bring ideas to life.
-          </p>
-          <div class="btn-box">
-            <a href="#projects" class="btn">View projects</a>
-          </div>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi there!</h1>
+        <h2>I'm Angel Kachev</h1>
+        <h3>Web Developer</h2>
+        <p>
+          I'm a passionate individual with a creative mind and an unwavering work ethic. I find joy in the art of coding and thrive on the continuous journey of improvement, one line of code at a time.
+        </p>
+        <div class="btn-box">
+          <a href="#projects" class="btn">View projects</a>
         </div>
-        <div class="character">
-          <div class="speech-bubble">Hello! Is it me you're looking for?</div>
-          <div class="hero-img"><img src="images/animated me.png"</div>
+      </div>
+      <div class="character">
+        <img src="images/hero smaller.png" class="responsive">
+      </div>
+    </section>
+    
+    <section class="about" id="about">
+      <h2 class="heading">About Me</h2>
+      <div class="about-content">
+        <p>
+          I've been into web development since 2022 and have been working on
+          expanding my knowledge and skills ever since. 
+        </p>
+        <p>I believe that hard work, dedication, and perseverance are
+          the key to achieving one's goals and I approach
+          every project with passion and commitment.</p>
+        <p>My tech stack is</p>
+        <div class="tech-stack">
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="icons"/>
         </div>
-      </section>
-      <section class="projects" id="projects">
-        <div class="projects-content">
-          <h2 class="heading">{myProjects}</h2>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide swiper-slide--one">
-                <div>
-                  <h2>To-Do List</h2>
-                  <a href="https://whatsnext.angelk8.sg-host.com/">Review</a>
-                </div>
-              </div>
-              <div class="swiper-slide swiper-slide--two">
-                <div>
-                  <h2>Gallery App</h2>
-                  <a href="https://gallery.angelk8.sg-host.com/">Review</a>
-                </div>
-              </div>
-              <div class="swiper-slide swiper-slide--three">
-                <div>
-                  <h2>Weather App</h2>
-                  <a href="https://github.com/Kachev032/weather-app">Review</a>
-                </div>
-              </div>
-              <div class="swiper-slide swiper-slide--four">
-                <div>
-                  <h2>Dad Jokes</h2>
-                  <a href="https://dadjokes.angelk8.sg-host.com/">Review</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="icons"/>
         </div>
-      </section>
-      <section class="about" id="about">
-        <div class="about-content">
-          <h2 class="heading">About Me</h2>
-          <h3>
-            I am a passionate individual with a creative mind, a proactive
-            mindset, and an unwavering work ethic.
-          </h3>
-          <p>
-            I've been into web development since 2022 and have been working on
-            expanding my knowledge and skills ever since. Currently I'm focusing
-            on JavaScript, HTML, CSS and React.js and plan on going Fullstack
-            for the future.
-          </p>
-          <p>
-            I believe that hard work, dedication, and perseverance are
-            non-negotiable when it comes to achieving one's goals and I approach
-            every project with passion and commitment.
-          </p>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icons"/>
+        </div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" class="icons"/>
+        </div>
+        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="icons"/>
+        </div>
+      </div>
+        
+    </section>
+    <hr class="solid">
 
-          <h3>Hey, did you click the space cat yet?</h3>
-        </div>
-        <div class="about-img">
-          <div class="hidden-message" id="hidden-message">
-            I'll play your favourite song if you hire him.
-          </div>
-          <img
-            src="images/Guitar player no back.png"
-            alt=""
-            id="clickable-img"
-          />
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <h2 class="heading">Contact Me</h2>
-        <form
-          action="https://formsubmit.co/d537315aaae3ef683f17504e68c33824"
-          method="POST"
-        >
-          <div class="input-box">
-            <div class="input-field">
-              <input type="text" name="name" placeholder="Full Name" required />
-              <span class="focus"></span>
-            </div>
-            <div class="input-field">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-              />
-              <span class="focus"></span>
-            </div>
+    <section class="projects" id="projects">
+      <div class="projects-content">
+        <h1>My Recent Work</h1>
+        <p>Here are a few of my Vanilla JavaScript projects I've worked on. Want to work together? <a href="mailto:akkachev@gmail.com"
+          >Email me.</a></p>
+        <div class="project-grid">
 
-            <div class="textarea-field">
-              <textarea
-                name="message"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Your Message"
-                required
-              ></textarea>
-              <span class="focus"></span>
+          <div class="card card--one">
+            <div class="overlay">
+              <h1>Dad Jokes</h1>
+              <a href="#" class="btn">View Project</a>
             </div>
           </div>
-          <div class="btn-box btns">
-            <button type="submit" class="btn">Submit</button>
+          <div class="card card--two">
+            <div class="overlay">
+              <h1>Image Gallery</h1>
+              <a href="#" class="btn">View Project</a>
+            </div>
           </div>
-        </form>
-      </section>
-    </main>
+            
+          <div class="card card--three">
+            <div class="overlay">
+              <h1>To-do List</h1>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box btn--project">
+          <a href="https://github.com/Kachev032" target="_blank" style="--i: 1" class="btn ">
+            <span>
+              <i class="bx bxl-github"></i
+                >
+            </span>
+            <span>See on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr class="solid">
+    <section class="contact" id="contact">
+      <h1 class="heading-contact">Thanks for taking the time to reach out!</h1>
+     <div class="form-containter">
+        <form>      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" required />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" required />
+            <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
+            <input type="submit" value="SUBMIT"/>
+          </form>
+          
+     </div>
+    </section>
+
     <footer class="footer">
       <div class="footer-text">
         <p>Copyright &copy; 2023 by Angel Kachev | All Rights Reserved.</p>
@@ -180,7 +157,7 @@
         ></a>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="app.js"></script>
+
+    <script src="./app.js" type="module"></script>
   </body>
 </html>
